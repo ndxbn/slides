@@ -1,0 +1,29 @@
+{
+  "name": "slides",
+  "version": "0.0.0",
+  "description": "my slides",
+  "scripts": {
+    "preinstall": "npm run installed:pandoc && npm run installed:git",
+    "installed:pandoc": "pandoc -v",
+    "installed:git": "git --version",
+    "install": "npm run install:revealjs",
+    "install:revealjs": "git clone git@github.com:hakimel/reveal.js.git out/reveal.js",
+    "build": "pandoc src/example.md -s -t revealjs -o out/example.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ndxbn/slides.git"
+  },
+  "keywords": [],
+  "author": "sitri@ndxbn <sitri.ndxbn@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ndxbn/slides/issues"
+  },
+  "homepage": "https://github.com/ndxbn/slides#readme",
+  "devDependencies": {
+    "npm-check-updates": "^2.14.0",
+    "shelljs": "^0.8.1"
+  }
+}
