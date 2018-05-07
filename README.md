@@ -1,4 +1,6 @@
 # slides
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/ndxbn/slides.svg)](https://greenkeeper.io/)
 my slides
 
 # Dependencies
